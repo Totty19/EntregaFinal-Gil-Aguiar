@@ -1,11 +1,10 @@
-import { ItemDetailCont } from "../../Components"
-import { Item } from "../../Components/Item"
+import { ItemDetailCont, ItemListCont } from "../../Components"
 
 const Product = () => {
     return (
         <div className='Cont'>
             <h1>Productos</h1>
-            <Item />
+            <ItemListCont />
             <ItemDetailCont />
         </div>
     )

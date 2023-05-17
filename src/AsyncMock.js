@@ -1,5 +1,3 @@
-import { Item } from "./Components/Item"
-
 const products = [
     {
         nombre: 'Bermuda cargo',

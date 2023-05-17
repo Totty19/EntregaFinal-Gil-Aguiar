@@ -1,11 +1,12 @@
 import { Item } from '../Item'
 
-const ItemList = ({props }) => {
+const ItemList = ({ products }) => {
     return (
         <div>
-            {props.map(props => <Item key={Item.id} Item={props}/>)}
-        </div>  
+        {products && products.map(product => <Item key={product.id} {...product} />)}
+        </div>
     )
 }
+
 
 export { ItemList } 
