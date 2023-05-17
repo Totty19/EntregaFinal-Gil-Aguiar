@@ -1,0 +1,42 @@
+
+.contCards{
+    display: flex;
+    justify-content: center;
+    .itemCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        .contBtns {
+            display: flex;
+            justify-content: center;
+            background: transparent;
+            flex-direction: column;
+            color: black;
+            align-items: center;
+            gap: 20px;
+            .contBtn {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                gap: 20px; 
+                .G{
+                    background-color: rgba(0, 0, 0, 0.844);
+                    color: white;
+                }
+                .R{
+                    background-color: rgba(0, 0, 0, 0.844);
+                    color: white;
+                }
+            }
+            .contBtnAdd{
+                display: flex;
+                .Add{
+                    background-color: rgba(0, 0, 0, 0.844);
+                    color: white;
+                }
+            }
+        }
+    }
+}

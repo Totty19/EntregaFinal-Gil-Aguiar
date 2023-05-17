@@ -1,0 +1,5 @@
+export {SingUp} from './singup'
+export {Login} from './login'
+export {Dashboard} from './dashboard'
+export {ContacUbic} from './contacto-ubicacion'
+export {Product} from './productos'

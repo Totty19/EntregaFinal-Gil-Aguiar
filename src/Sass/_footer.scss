@@ -1,0 +1,25 @@
+.topFooter{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    .contTop{
+        text-align: center;
+        h6{
+            font-size: 17px;
+        }
+        p{
+            font-size: 14px;
+            color: rgb(119, 119, 119);
+        }
+    }
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.892);
+    width: 100%;
+    height: 200px;
+    color: white;
+}
