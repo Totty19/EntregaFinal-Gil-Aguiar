@@ -54,14 +54,10 @@
     flex-direction: row;
     align-items: center;
     margin: 5px;
+    padding: 2px;
     &:hover{
         transition: 0.2s;
         color: rgb(197, 197, 197);
     }
 }
 
-.Cont{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}

@@ -1,0 +1,14 @@
+
+.ContPadre{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.ContProd{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}

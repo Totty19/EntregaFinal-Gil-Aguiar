@@ -1,9 +1,12 @@
-import cart from './Assets/cart.png'
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { NavLink } from "react-bootstrap"
+
 
 const CartWidget = () => {
     return (
-        <div className='imgCart'>
-            <a href='#carrito'><img src={cart} alt="cart-widget" className='imgCart'/>0</a>
+        <div className='imgCart link'>
+            <NavLink to='#carrito'>0<FontAwesomeIcon icon={faCartShopping} className="link"/></NavLink>
         </div>
     )
 }

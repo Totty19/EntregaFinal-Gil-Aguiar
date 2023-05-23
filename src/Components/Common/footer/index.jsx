@@ -1,19 +1,23 @@
+import { faCreditCard, faLock, faTruckFast } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 const Footer = () => {
     return (
         <>
             <div className="topFooter">
                 <section className="contTop">
-                    <img src="" alt="" />
+                    <FontAwesomeIcon icon={faTruckFast}/>
                     <h6>Enviamos tu compra</h6>
                     <p>Entregas a todo el pais</p>
                 </section>
                 <section className="contTop">
-                    <img src="" alt="" />
+                    <FontAwesomeIcon icon={faCreditCard}/>
                     <h6>Paga como quieras</h6>
                     <p>tarjetas de credito y debito</p>
                 </section>
                 <section className="contTop">
-                    <img src="" alt="" />
+                    <FontAwesomeIcon icon={faLock}/>
                     <h6>Compra con seguridad</h6>
                     <p>tus datos siempre protegidos</p>
                 </section>

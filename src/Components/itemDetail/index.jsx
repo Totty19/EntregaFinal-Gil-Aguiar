@@ -16,7 +16,7 @@ const ItemDetail = ({id, nombre, img, precio, stck, talles}) => {
                     <p>Stock disponible: {stck}</p>
                     <p>Talles en stock: {talles}</p>
                 </section>
-                <ItemCount initial={0} stock={stck} onAdd={(quantity) => (quantity)}/>
+                <ItemCount initial={0} stock={stck} onAdd={(quantity) => (quantity)} />
             </div>
         </div>
     )

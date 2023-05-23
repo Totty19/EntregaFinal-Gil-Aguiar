@@ -53,64 +53,64 @@
   flex-direction: row;
   align-items: center;
   margin: 5px;
+  padding: 2px;
 }
 .link:hover {
   transition: 0.2s;
   color: rgb(197, 197, 197);
 }
 
-.Cont {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .contCards {
   display: flex;
-  justify-content: center;
+  margin: 25px;
 }
 .contCards .itemCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.contCards .itemCard .contBtns {
-  display: flex;
-  justify-content: center;
   background: transparent;
-  flex-direction: column;
-  color: black;
-  align-items: center;
-  gap: 20px;
+  width: 290px;
+  height: 450px;
+  transition: all 0.6s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.contCards .itemCard .contBtns .contBtn {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
+.contCards .itemCard h2 {
+  font-size: 22px;
 }
-.contCards .itemCard .contBtns .contBtn .G {
-  background-color: rgba(0, 0, 0, 0.844);
+.contCards .itemCard:hover {
+  transition: all 0.6s;
+  transform: scale(1.1);
+}
+.contCards .itemCard .imgProd {
+  width: 80%;
+}
+.contCards .itemCard .det {
+  border: solid black 1px;
+}
+.contCards .itemCard .det:hover {
+  transition: all 0.6s;
+  background-color: rgba(0, 0, 0, 0.833);
   color: white;
 }
-.contCards .itemCard .contBtns .contBtn .R {
-  background-color: rgba(0, 0, 0, 0.844);
-  color: white;
-}
-.contCards .itemCard .contBtns .contBtnAdd {
-  display: flex;
-}
-.contCards .itemCard .contBtns .contBtnAdd .Add {
-  background-color: rgba(0, 0, 0, 0.844);
-  color: white;
+.contCards .itemCard section p {
+  border-top: solid black 2px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.ContPadre {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.ContProd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .topFooter {
