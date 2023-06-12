@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 
 
 const Item = ({id, nombre, img, precio, stck}) => {
@@ -22,4 +23,4 @@ const Item = ({id, nombre, img, precio, stck}) => {
     )
 }
 
-export {Item}
+export { Item }; 

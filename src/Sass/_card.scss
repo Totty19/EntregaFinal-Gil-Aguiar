@@ -4,18 +4,24 @@
     .itemCard {
         background: transparent;
         width: 290px;
-        height: 450px;  
+        height: 450px;
+        margin-top: 30px;  
         transition: all 0.6s;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         h2{
             font-size: 22px;
         }
-        &:hover {
-            transition: all 0.6s;
-            transform: scale(1.1);
+        .imgPadr{
+            display: flex;
+            justify-content: center;
         }
         .imgProd{
             width: 80%;
+            transition: all 0.6s;
+        }
+        &:hover {
+            transition: all 0.6s;
+            transform: scale(1.1);
         }
         .det{
             border: solid black 1px;
@@ -27,9 +33,14 @@
         }
         section{
             p{
-                
                 border-top: solid black 2px;
             }
         }
     }
+}
+
+.ContPadreDetalle{
+    display: flex;
+    justify-content: center;
+    margin: 55px;
 }

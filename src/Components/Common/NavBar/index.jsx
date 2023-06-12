@@ -6,11 +6,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../../CartWidget/CartWidget';
 import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom';
-import {ContacUbic,Login,SingUp,Dashboard} from '../index';
+import { ContacUbic,Login,SingUp,Dashboard, Tasks, Cart, Task} from '../index';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLocationDot, faUser, faUsers} from '@fortawesome/free-solid-svg-icons'
 import { ItemListCont } from '../../ItemListCont';
 import { ItemDetailCont } from '../../itemDetailCont';
+import { CheckOut } from '../../checkout';
+
 
 const NavBar = () =>{ 
 return (
@@ -34,7 +36,7 @@ return (
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="me-auto">
                                     <NavLink to="/contacto-ubicacion" className='link'>
-                                        Contacto y Ubicacion
+                                        Contacto y ubicacion
                                         <FontAwesomeIcon icon={faLocationDot} />
                                     </NavLink>
                                     <NavDropdown title="Productos" id="collasible-nav-dropdown" menuVariant="dark">
@@ -69,10 +71,14 @@ return (
         <Routes>
             <Route path='/contacto-ubicacion' element={<ContacUbic />} />
             <Route path='/category/:categoryId' element={<ItemListCont />} />
-            <Route path='/item/:itemId'  element={<ItemDetailCont />} />
+            <Route path='/item/:itemId' element={<ItemDetailCont />} />
             <Route path='/login' element={<Login />} />
             <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/tasks' element={<Tasks />} />
+            <Route path='/task' element={<Task />} />
+            <Route path='/cart' element={<Cart />} />
             <Route path='/singup' element={<SingUp />} />
+            <Route path='/checkout' element={<CheckOut />} />
         </Routes>
     </BrowserRouter>
 
@@ -80,4 +86,4 @@ return (
 );
 }
 
-export  { NavBar }
+export { NavBar }
