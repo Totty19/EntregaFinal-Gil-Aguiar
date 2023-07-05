@@ -4,12 +4,69 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    gap: 60px;
+    img{
+        position: absolute;
+        z-index: -10;
+        height: 1322px;
+        opacity: calc(5);
+    }
     .ContNum{
         display: flex;
         flex-direction: row;
         gap: 35px;
         p{
             border-bottom: solid 1px black;
+        }
+    }
+}
+
+.boxCont{
+    width: 600px;
+    .cajaCont{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .lbl{
+            width: 100%;
+            margin: 6px;
+            color: black;
+            input{
+                width: 100%;
+                text-align: center;
+                border: none;
+                padding: 9px;
+                background: transparent;
+                border-radius: 5px;
+                border-bottom: solid black 2px;
+            }
+        }
+        .text{
+            resize: none;
+            border: none;
+            border-radius: 5px;
+            height: 150px;
+            text-align: center;
+            width: 100%;
+            border-bottom: solid black 2px;
+            padding: 9px;
+            background: transparent;
+            color: black;
+        }
+        .ContBtn{
+            display: flex;
+            margin: 10px;
+            .btn{
+                padding: 12px;
+                transition: all 0.6s;
+                margin: 8px;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                    transition: all 0.6s;
+                }
+            }
         }
     }
 }

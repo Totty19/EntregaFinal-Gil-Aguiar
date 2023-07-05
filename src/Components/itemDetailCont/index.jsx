@@ -14,7 +14,7 @@ const ItemDetailCont = () => {
     useEffect(() => {
         setLoading(true)
 
-        const docRef = doc(db, 'itemColección', itemId)
+        const docRef = doc(db, 'itemColección', "XgsEjdUdVmgpSRxzokCc");
 
         getDoc(docRef)
             .then(response => {
@@ -28,7 +28,7 @@ const ItemDetailCont = () => {
             .finally(() => {
                 setLoading(false)
             })
-        }, [itemId]);
+        }, ["XgsEjdUdVmgpSRxzokCc"]);
 
     return (
         <div className="ContPadreDetalle">

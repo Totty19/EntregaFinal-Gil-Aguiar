@@ -40,7 +40,6 @@ const Footer = () => {
                     <img src="" alt="" />
                     <img src="" alt="" />
                 </div>
-                <p></p>
             </footer>
         </>
     );

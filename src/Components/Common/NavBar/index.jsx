@@ -19,7 +19,7 @@ return (
     <BrowserRouter>
         <nav className='NvBar'>
                 <Container className='ConTitulo'>
-                    <NavLink to="/dashboard">Flow Vestiment</NavLink>
+                    <NavLink to="/">Flow Vestiment</NavLink>
                     <Form className="d-flex">
                             <Form.Control
                                 type="search"   
@@ -73,7 +73,7 @@ return (
             <Route path='/category/:categoryId' element={<ItemListCont />} />
             <Route path='/item/:itemId' element={<ItemDetailCont />} />
             <Route path='/login' element={<Login />} />
-            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/' element={<Dashboard />} />
             <Route path='/tasks' element={<Tasks />} />
             <Route path='/task' element={<Task />} />
             <Route path='/cart' element={<Cart />} />

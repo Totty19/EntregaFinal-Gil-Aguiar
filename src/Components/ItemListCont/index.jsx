@@ -37,7 +37,7 @@ const ItemListCont = () => {
 
     return(
         <div className="ContPadre">
-            <ItemList products={ products } />
+            <ItemList products={ products } categoryId={ categoryId } />
         </div>
     )
 }
