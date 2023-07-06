@@ -78,7 +78,7 @@ return (
             <Route path='/task' element={<Task />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/singup' element={<SingUp />} />
-            <Route path='/checkout' element={<CheckOut />} />
+            <Route path='/Checkout' element={<CheckOut />} />
         </Routes>
     </BrowserRouter>
 

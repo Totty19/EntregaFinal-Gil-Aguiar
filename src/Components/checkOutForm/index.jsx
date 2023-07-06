@@ -1,41 +1,46 @@
 import { useState } from "react"
 
-const CheckOutForm = (onConfirm) => {
-    const [name, setName] = useState('')
-    const [phone, setPhone] = useState('')
-    const [email, setEmail] = useState('')
+const CheckOutForm = ({ onConfirm }) => {
+    const [name, setName] = useState ('')
 
-    const handleConfirm = (event) => {
-        event.preventDefault()
+    const [phone, setPhone] = useState ('')
 
-        const userData = {
-            name, phone, email
-        }
+    const [email, setEmail] = useState ('')
 
-        onConfirm(userData)
-    }
 
-    return (
-        <div className="Container"> 
-            <form onSubmit={handleConfirm} className="Form" >
-                <label htmlFor="">
-                    Nombre
-                    <input className="Input" type="text" value={name} onChange={({ target }) => setName(target.value)} />
-                </label>
-                <label htmlFor="">
-                    Telefono
-                    <input className="Input" type="text" value={phone} onChange={({ target }) => setPhone(target.value)} />
-                </label>
-                <label htmlFor="">
-                    Email
-                    <input className="Input" type="email" value={email} onChange={({ target }) => setEmail(target.value)} />
-                </label>
-                <div className="Label">
-                    <button type="submit">Crear orden</button>
-                </div>
-            </form>
-        </div>
-    )
+const handleConfirm = () => {
+    
+    const userData = {
+        name,phone,email
+    } 
+
+    onConfirm(userData)
 }
+
+return ( 
+    <div className="">
+        <form onSubmit={handleConfirm} className="form">
+                <input className="input"
+                        placeholder="Nombre"  
+                        type="text" 
+                        value={name}
+                        onChange={({target}) => setName (target.value)} />
+
+                <input className="input"
+                        placeholder="Celular"
+                        type="text"
+                        value={phone}
+                        onChange={({target}) => setPhone(target.value)} />
+
+                <input className="input"
+                        placeholder="Email"
+                        type="email"
+                        value={email}
+                        onChange={({target}) => setEmail(target.value)} />
+
+                <button type="submit" className="btn order"> Crear orden </button>
+        </form>
+    </div>
+)}
 
 export { CheckOutForm }

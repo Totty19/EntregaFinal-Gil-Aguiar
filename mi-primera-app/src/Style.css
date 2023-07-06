@@ -243,6 +243,67 @@
   border-bottom: solid 2px black;
 }
 
+.contCart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.contCart .orden {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  margin: 8px;
+  width: 20%;
+  border-bottom: solid 1px;
+}
+.contCart .orden:hover {
+  background-color: gray;
+}
+.contCart .lpm {
+  border-bottom: solid 1px;
+  width: 20%;
+}
+.contCart .lpm:hover {
+  background-color: gray;
+}
+
+.productsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formCont .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.formCont .form input {
+  border: none;
+  border-bottom: solid 2px black;
+  text-align: center;
+  padding: 8px;
+}
+.formCont .form .btn {
+  padding: 8px;
+  margin: 5px;
+  background-color: rgb(202, 202, 202);
+}
+.formCont .form .btn:hover {
+  background-color: rgb(156, 154, 154);
+}
+
+.checkOut {
+  color: rgb(83, 83, 83);
+}
+
 .ContInicio {
   display: flex;
   flex-direction: column;
